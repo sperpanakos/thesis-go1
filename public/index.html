@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unitree GO1 Video Stream</title>
+    <link rel="stylesheet" type="text/css" href="/public/main.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Unitree G01 live-streaming</h1>
+        <a href="info.html"><button>About the project</button></a>
+    </header>
+    <main>
+        <img id="logo-image" src="public/index.jpeg" alt="Logo">
+        <video id="video-stream" autoplay></video>
+        <script src="/socket.io/socket.io.js"></script>
+    </main>
+    <footer>
+        <p>2022-2023 © Video Streaming app by Sperdoulis Panagiotis</p>
+    </footer>
+      
+    <div id="command-line-container">
+        <div id="command-line-title">Command Line</div>
+        <input type="text" id="command-line-input" placeholder="Enter a command...">
+    </div>
+
+    <script src="/public/main.js"></script>    
+</body>
+</html>
