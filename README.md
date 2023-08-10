@@ -1,4 +1,4 @@
-INSTALLATION/APPLICATION RUNNING INSTRUCTIONS
+# INSTALLATION/APPLICATION RUNNING INSTRUCTIONS
 
 1.Download the dependencies:
 npm install
@@ -15,7 +15,7 @@ Inside the web-app folder
 
 
 
-"5G IMPLEMENTATION" 
+## 5G IMPLEMENTATION 
 (Reccommend using the camera_web.py and the RCNN file)
 
 "camera_web.py" : receiving and displaying the incoming livestream (over 5G) using flask
