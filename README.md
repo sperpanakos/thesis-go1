@@ -13,3 +13,12 @@ Inside the web-app folder
 
 4.Run the server.js file and navigate the the localhost:3000 page on your browser
 
+
+
+"5G IMPLEMENTATION" 
+(Reccommend using the camera_web.py and the RCNN file)
+
+"camera_web.py" : receiving and displaying the incoming livestream (over 5G) using flask
+"RCNN_inception_v2_human_detection_rtsp_web.py" : adds some human recognitionto the livestream
+"simple_human_detection_v2.py" : adds some human recognition to the livestream/simplier and less effective algorithm (ALTERNATIVE)
+
