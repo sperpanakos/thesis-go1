@@ -1,10 +1,8 @@
-/* Set the body to use a sans-serif font */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
-/* Style the header */
 header {
   background-color: #333;
   color: #fff;
@@ -12,7 +10,6 @@ header {
   text-align: center;
 }
 
-/* Style the main section */
 main {
   display: flex;
   flex-direction: column;
@@ -30,7 +27,6 @@ main {
   height: 128px;
 }
 
-/* Style the video stream */
 #my-video {
   width: 55%;
   height: 80%;
@@ -38,7 +34,6 @@ main {
   object-fit: contain;
 }
 
-/* Style the gamepad container */
 #gamepad {
   margin-top: 20px;
   display: flex;
@@ -46,7 +41,6 @@ main {
   justify-content: center;
 }
 
-/* Style the footer */
 footer {
   background-color: #333;
   color: #fff;

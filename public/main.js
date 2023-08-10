@@ -1,19 +1,19 @@
 //new socket obj , shorthand to io.connect()
-const socket = io();
+// const socket = io();
 
-socket.on('connect',function(){
-  console.log('connection ready!');
-})
-const video = document.getElementById("video-stream");
+// socket.on('connect',function(){
+//   console.log('connection ready!');
+// })
+// const video = document.getElementById("video-stream");
 
-socket.on('video', function(data) {
-  const blob = new Blob([data], { type: 'video/h264' });
-  const url = URL.createObjectURL(blob);
+// socket.on('video', function(data) {
+//   const blob = new Blob([data], { type: 'video/h264' });
+//   const url = URL.createObjectURL(blob);
   
-  video.src = url;
-  video.autoplay = true
+//   video.src = url;
+//   video.autoplay = true
 
-});
+// });
 
 const commandLineInput = document.getElementById('command-line-input');
 const commandLineContainer = document.getElementById('command-line-container');
@@ -29,8 +29,21 @@ commandLineInput.addEventListener('keydown', function(event) {
     commandLineContainer.appendChild(commandLineOutput);
     greenOutputs.push(commandLineOutput);
     commandLineInput.value = '';
+
+    if (command === 'walk') {
+      fetch('/walk1')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+        })
+        .catch(error => {
+          console.error('Error executing walk command:', error);
+        });
+    }
   }
-});
+  }
+);
 
 const clearButton = document.querySelector('#clear-button');
 

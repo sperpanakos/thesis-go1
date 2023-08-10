@@ -15,9 +15,10 @@
     </header>
     <main>
         <img id="logo-image" src="public/up_2017_logo_en-1024x372.png" alt="Logo">
-        <video id="my-video" autoplay src="http://localhost:8004"></video>
-        <script src="/socket.io/socket.io.js"></script>
-    </main>
+        <video id="my-video" autoplay controls>
+          <source  type="application/x-mpegURL">
+        </video>
+            </main>
     <footer>
         <p>2022-2023 © Video Streaming app by Sperdoulis Panagiotis</p>
     </footer>
@@ -27,6 +28,8 @@
         <input type="text" id="command-line-input" placeholder="Enter a command...">
         <button id="clear-button">Clear</button>
       </div>
+
+      
       <div id="status-container">
         <div id="status-title">Status</div>
         <table id="status-table">
@@ -40,8 +43,20 @@
           </tr>
         </table>
       </div>
+
       
-      
+    <script src="/socket.io/socket/io.js"></script>
+    <script>
+      const videoPlayer = document.getElementById('my-video')
+      const socket = io()
+
+      socket.on('stream',(data)=>{
+        const blob = new Blob([data], { type: 'video/mp4' }) 
+        const videoURL = URL.createObjectURL(blob)
+        videoPlayer.src = videoURL
+      })
+    </script>
+    
     <script src="/public/main.js"></script>    
 </body>
 </html>
