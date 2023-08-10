@@ -1,4 +1,4 @@
-# Thesis: Livestream Application with 5G Implementation
+# Thesis: Study and Design of an IoT Application in 5G utilizing the Robotic Quadruped Unitree Go1
 
 **Author:** Panagiotis Athanasios Sperdoulis  
 **University:** University of Patras  
