@@ -3,22 +3,7 @@ INSTALLATION INSTRUCTIONS
 1.Download the dependencies:
 npm install
 
-2.Run the test-source gstreamer pipeline in the command line:
-gst-launch-1.0 videotestsrc ! video/x-raw,width=640,height=480 ! videoconvert ! x264enc ! rtph264pay ! udpsink host=127.0.0.1 port=8002
+2.Run the first script "start_dogo.sh" (ssh into the robot and then kills the proccesses needed to transmit image)
 
-3.Receive the incoming h264 video frames,encode them in WebM format and serve them on port 8004:
-gst-launch-1.0 udpsrc port=8002 ! application/x-rtp,encoding-name=H264,payload=96 ! rtph264depay ! avdec_h264 ! videoconvert ! vp8enc ! webmmux ! tcpserversink host=127.0.0.1 port=8004
-
-
-
-HOW TO SET THE ROBOT TO THE APPLICATION
-
-1.Use ssh to connect to the robot jetson nano on the head (using the appropriatie cridentials):
-ssh unitree@192.168.123.13
-
-2.Move to the Unitreecamera-SDK directory 
-cd Unitreecamera-SDK
-
-3.Run the following command in the root directory (supposing that the example files are built correctly according to the Unitree user manual):
-./bins/example_putimagetrans
+3.Run the seconde script "start_dogo2.sh" 
 
