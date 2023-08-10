@@ -3,11 +3,11 @@
 **Author:** Panagiotis Athanasios Sperdoulis  
 **University:** University of Patras  
 **Degree:** Electrical Engineering & Computer Science  
-**Date:** August 2023
+
 
 ## Introduction
 
-This README file accompanies my thesis project, where I explore the development of a livestream application with a 5G implementation. As part of my studies at the University of Patras, pursuing a degree in Electrical Engineering & Computer Science, I've worked on this project to demonstrate the integration of modern technologies in practical applications.
+This README file accompanies my thesis project, where I explore the development of a livestream application with a 5G implementation using the robotic dog **Unitree Go1** . As part of my studies at the University of Patras, pursuing a degree in Electrical Engineering & Computer Science, I've worked on this project to demonstrate the integration of modern technologies in practical applications.
 
 Feel free to explore the installation instructions, application details, and 5G implementation aspects provided in this document.
 
